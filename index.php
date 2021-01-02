@@ -7,7 +7,11 @@
 		<link href="css/authentification.css" rel="stylesheet">
 	</head>
 	<body>
-
+		<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="centrerImg">
+		<div>
+			<h1>Authentifier-vous :</h1>
+			
+		</div>
 	</body>
 	<script type="text/javascript" src="jquery/jquery.js"></script>
 	<script type="text/javascript" src="jquery/authentification.js"></script>
