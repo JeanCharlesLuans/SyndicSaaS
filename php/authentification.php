@@ -11,7 +11,7 @@
         $nb = $prepare ->rowCount();
 
         if (nb == 0) {
-            echo '<p class="red"> Aucun utilisateur n\'as était trouvée </p>';
+            return '<p class="red"> Aucun utilisateur n\'as était trouvée </p>';
         } else {
             $req = $pdo->query($sql);    
             6. while($row = $req->fetch()) {    
