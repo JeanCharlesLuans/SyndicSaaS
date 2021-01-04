@@ -1,3 +1,13 @@
-.centrerImg {
-    transform: translate(125%);
+
+.logoMenu {
+    transform: translateX(-5px);
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.centrerDiv {
+    padding-top: 140px;
+    margin: 0 auto;
+    text-align: center;
 }

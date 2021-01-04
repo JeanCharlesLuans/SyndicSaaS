@@ -7,10 +7,14 @@
 		<link href="css/authentification.css" rel="stylesheet">
 	</head>
 	<body>
-		<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="centrerImg">
-		<div>
-			<h1>Authentifier-vous :</h1>
-			
+		<div class="container-fluid fondEcranMenu">
+			<div class="centrerDiv">
+				<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="logoMenu"><br/><br/>
+				<h1>Authentifier-vous :</h1>
+				<input id="inputIdentifiant" type="text" placeholder="pseudo">
+				<input id="inputMDP" type="text" placeholder="Mots de passe"><br/><br/>
+				<input id="inputBtn" type="button" value="connecter">
+			</div>
 		</div>
 	</body>
 	<script type="text/javascript" src="jquery/jquery.js"></script>
