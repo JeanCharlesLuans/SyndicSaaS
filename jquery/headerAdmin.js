@@ -1,11 +1,9 @@
-$('.iconMenu').on('click',function() {
-    $('.menu').removeClass('d-none');
-    $('.iconeCroix').removeClass('d-none');
-    $('.iconMenu').addClass('d-none');
+$('#iconeUser').on("click",function() {
+    $('#divUser').removeClass('d-none');
+    $('#divCopropriete').addClass('d-none');
 });
 
-$('.iconeCroix').on('click',function() {
-    $('.menu').addClass('d-none');
-    $('.iconeCroix').addClass('d-none');
-    $('.iconMenu').removeClass('d-none');
+$('#iconeCopro').on("click",function() {
+    $('#divUser').addClass('d-none');
+    $('#divCopropriete').removeClass('d-none');
 });
