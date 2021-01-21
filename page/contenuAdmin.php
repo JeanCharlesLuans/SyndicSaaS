@@ -12,40 +12,86 @@
 				<p id="iconeUser" class="navAdmin user"><i class="fas fa-users"></i> Utilisateur </p>
 				<a class="deconnexion" href="../index.php"> <i class="fas fa-power-off"></i> </a>
 		</header>
-		<div class="container backgroundContainer">
+		<div class="container-sm backgroundContainer">
 			<div id="divCoproprietes">
-				<h1 class="titre">Les copropriétés sur l'application</h1>
+				<h1 class="divCenter">Les copropriétés sur l'application</h1>
 				<p class="ajoutCopro"><i class="fas fa-plus"></i> Copropriété</p>
-				<div class="divCopropriete row">
+				<div id="divCopro1" class="divCopropriete row">
 					<div class="col-12">
-						<h2 class="titreNom"> Sainte herves de la Rue pierre <h2>
+						<h2 class="titreNom"> Sainte herves de la Rue pierre </h2>
 					</div>
-					<div class="col-6">
-						<i class="fas fa-trash fa-2x"></i>
-					</div>
-					<div class="col-6">
+					<div class="col-6 edit">
 						<i class="far fa-edit fa-2x"></i>
 					</div>
-					</div class="col-12">
-						<h3 class="titreRubrique"> Gestionnaire de copropriété :</h3>
+					<div class="col-6 ">
+						<i class="fas fa-trash fa-2x sup"></i>
 					</div>
-					</div class="col-12">
+					<br/><br/>
+					<div class="col-12 ajoutCenter">
+						<p class="ajout divCenter"><i class="fas fa-plus"></i> user</p>
+					</div>
+					<div class="col-12">
+						<h3 class="titreRubrique"> Gestionnaire de copropriété :</h3>
+						<table class="tabUserCo">
+							<tr>
+								<th > ID</th>
+								<th > NOM</th>
+								<th > PRENOM</th>
+								<th ></th>
+							</tr>
+							<tr>
+								<td > <input type="number" value="1" disabled></td>
+								<td ><input type="text" value="Dumas" disabled></td>
+								<td ><input type="text" value="Michel" disabled></td>
+								<td class="userSup"><i class="fas fa-user-minus sup"></i></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-12">
 						<h3 class="titreRubrique"> Copropriétaire :</h3>
+						<table class="tabUserCo">
+							<tr>
+								<th > ID</th>
+								<th > NOM</th>
+								<th > PRENOM</th>
+								<th ></th>
+							</tr>
+							<tr>
+								<td > <input type="number" value="1" disabled></td>
+								<td ><input type="text" value="Dumas" disabled></td>
+								<td ><input type="text" value="Michel" disabled></td>
+								<td class="userSup"><i class="fas fa-user-minus sup"></i></td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
 			<div id="divUsers" class="d-none">
 				<h1 class="titre">Utilisateur de l'application</h1>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
+				<table class="tabUser" style="boder: solid 3px;">
+							<tr>
+								<th > ID</th>
+								<th > NOM</th>
+								<th > PRENOM</th>
+								<th >LOGIN</th>
+								<th >MDP</th>
+								<th >ADRESSE</th>
+								<th >TEL</th>
+								<th >Mail</th>
+								<th ></th>
+							</tr>
+							<tr>
+								<td >1</td>
+								<td >Dumas</td>
+								<td >Michel</td>
+								<td >MichelD</td>
+								<td >12345</td>
+								<td >123 rue de brest</td>
+								<td >0604050505</td>
+								<td >test@gmail</td>
+								<td ><i class="fas fa-user-minus sup"></i></td>
+							</tr>
+						</table>
 			</div>
 		</div>
     </body>

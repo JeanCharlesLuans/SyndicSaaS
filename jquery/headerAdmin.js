@@ -1,9 +1,9 @@
 $('#iconeUser').on("click",function() {
-    $('#divUser').removeClass('d-none');
-    $('#divCopropriete').addClass('d-none');
+    $('#divUsers').removeClass('d-none');
+    $('#divCoproprietes').addClass('d-none');
 });
 
 $('#iconeCopro').on("click",function() {
-    $('#divUser').addClass('d-none');
-    $('#divCopropriete').removeClass('d-none');
+    $('#divUsers').addClass('d-none');
+    $('#divCoproprietes').removeClass('d-none');
 });
