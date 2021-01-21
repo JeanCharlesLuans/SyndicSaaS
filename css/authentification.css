@@ -1,3 +1,6 @@
+.background {
+    background-color: #0D587F;
+}
 
 .logoMenu {
     transform: translateX(-5px);
@@ -7,11 +10,21 @@
 }
 
 .centrerDiv {
-    padding-top: 140px;
+    top: 140px;
+    width: 600px;
+    padding: 30px;
     margin: 0 auto;
     text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border-style: outset;
+    border: solid 3px  #EA9E0A;
 }
 
 .red {
     color:red;
+}
+
+h1 {
+    margin-bottom: 30px;
 }
