@@ -6,11 +6,17 @@
 		<link href="../css/contenuAdmin.css" rel="stylesheet">
 	</head>
 	<body class="background">
-		<header class="headerPcTab">
+		<header class="headerPcTab d-none d-sm-block">
 				<img src='../img/logo_sans_fond.png' class="imgPcTab">
 				<p id="iconeCopro" class="navAdmin copro"><i class="fas fa-house-user"></i> Copropriété </p>
 				<p id="iconeUser" class="navAdmin user"><i class="fas fa-users"></i> Utilisateur </p>
 				<a class="deconnexion" href="../index.php"> <i class="fas fa-power-off"></i> </a>
+		</header>
+		<header class="headerMobil d-block d-sm-none">
+				<img src='../img/logo_sans_fond.png' class="imgMobil">
+				<p id="iconeCopro" class="navAdmin coproMobil"><i class="fas fa-house-user"></i> Copropriété </p><
+				<p id="iconeUser" class="navAdmin userMobil"><i class="fas fa-users"></i> Utilisateur </p>
+				<a class="deconnexionMobil" href="../index.php"> <i class="fas fa-power-off"></i> </a>
 		</header>
 		<div class="container-sm backgroundContainer">
 			<div id="divCoproprietes">
@@ -31,67 +37,62 @@
 						<p class="ajout divCenter"><i class="fas fa-plus"></i> user</p>
 					</div>
 					<div class="col-12">
-						<h3 class="titreRubrique"> Gestionnaire de copropriété :</h3>
-						<table class="tabUserCo">
-							<tr>
-								<th > ID</th>
-								<th > NOM</th>
-								<th > PRENOM</th>
-								<th ></th>
-							</tr>
-							<tr>
-								<td > <input type="number" value="1" disabled></td>
-								<td ><input type="text" value="Dumas" disabled></td>
-								<td ><input type="text" value="Michel" disabled></td>
-								<td class="userSup"><i class="fas fa-user-minus sup"></i></td>
-							</tr>
-						</table>
+						<h3 class="titreRubrique"> Gestionnaire :</h3>
+						<div class="row">
+							<div class="col-sm-2 d-none d-sm-block"> ID</div>
+							<div class="col-sm-4 d-none d-sm-block"> NOM</div>
+							<div class="col-sm-4 d-none d-sm-block"> PRENOM</div>
+							<div class="col-sm-2"></div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
+							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
+							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
+							<div class="col-12 col-sm-2"><i class="fas fa-user-minus sup"></i><i class="fas fa-user-edit"></i></div>
+						</div>
 					</div>
 					<div class="col-12">
 						<h3 class="titreRubrique"> Copropriétaire :</h3>
-						<table class="tabUserCo">
-							<tr>
-								<th > ID</th>
-								<th > NOM</th>
-								<th > PRENOM</th>
-								<th ></th>
-							</tr>
-							<tr>
-								<td > <input type="number" value="1" disabled></td>
-								<td ><input type="text" value="Dumas" disabled></td>
-								<td ><input type="text" value="Michel" disabled></td>
-								<td class="userSup"><i class="fas fa-user-minus sup"></i></td>
-							</tr>
-						</table>
+						<div class="row">
+							<div class="col-sm-2 d-none d-sm-block"> ID</div>
+							<div class="col-sm-4 d-none d-sm-block"> NOM</div>
+							<div class="col-sm-4 d-none d-sm-block"> PRENOM</div>
+							<div class="col-sm-2"></div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
+							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
+							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
+							<div class="col-12 col-sm-2"><i class="fas fa-user-minus sup"><i class="fas fa-user-edit"></i></i></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="divUsers" class="d-none">
 				<h1 class="titre">Utilisateur de l'application</h1>
-				<table class="tabUser" style="boder: solid 3px;">
-							<tr>
-								<th > ID</th>
-								<th > NOM</th>
-								<th > PRENOM</th>
-								<th >LOGIN</th>
-								<th >MDP</th>
-								<th >ADRESSE</th>
-								<th >TEL</th>
-								<th >Mail</th>
-								<th ></th>
-							</tr>
-							<tr>
-								<td >1</td>
-								<td >Dumas</td>
-								<td >Michel</td>
-								<td >MichelD</td>
-								<td >12345</td>
-								<td >123 rue de brest</td>
-								<td >0604050505</td>
-								<td >test@gmail</td>
-								<td ><i class="fas fa-user-minus sup"></i></td>
-							</tr>
-						</table>
+				<!--<table  class="tabUser" style="boder: solid 3px;"-->
+				<div class="row">
+					<div class="col-sm-1 d-none d-sm-block"> ID</div>
+					<div class="col-sm-1 d-none d-sm-block"> NOM</div>
+					<div class="col-sm-1 d-none d-sm-block"> PRENOM</div>
+					<div class="col-sm-1 d-none d-sm-block">LOGIN</div>
+					<div class="col-sm-1 d-none d-sm-block">MDP</div>
+					<div class="col-sm-2 d-none d-sm-block" >ADRESSE</div>
+					<div class="col-sm-2 d-none d-sm-block" >TEL</div>
+					<div class="col-sm-2 d-none d-sm-block">Mail</div>
+					<div class="col-sm-1 d-none d-sm-block"></div>
+				</div>
+				<div id="user1" class="row">
+					<div class="col-12 col-sm-1"><input type="number" value="1" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-1"><input type="text" value="Dumas" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-1"><input type="text" value="Michel" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-1"><input type="text" value="MichelD" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-1"><input type="text" value="1234" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-2" ><input type="text" value="123 rue de brest" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-2" ><input type="number" value="0604020305" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-2"><input type="text" value="Dumas@gmail.com" disabled class="inputUser"></div>
+					<div class="col-12 col-sm-1"><i id="suppression1" class="fas fa-user-minus sup"></i><i class="fas fa-user-edit"></i></div>
+				</div>
 			</div>
 		</div>
     </body>
