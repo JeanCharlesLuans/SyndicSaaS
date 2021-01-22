@@ -6,9 +6,9 @@
 		<link href="fontawesome/css/all.css" rel="stylesheet">
 		<link href="css/authentification.css" rel="stylesheet">
 	</head>
-	<body>
-		<div class="container-fluid fondEcranMenu">
-			<div class="centrerDiv">
+	<body class="background">
+		<div class="container fondEcranMenu">
+			<div class="col-12 centrerDiv">
 				<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="logoMenu"><br/><br/>
 				<h1>Authentifiez-vous :</h1>
 				<input id="inputIdentifiant" type="text" placeholder="pseudo">

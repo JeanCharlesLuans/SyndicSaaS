@@ -1,0 +1,183 @@
+.background {
+    background-color: #0D587F;
+}
+
+.backgroundContainer {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.imgPcTab {
+    position: absolute;
+    top:10px;
+    left:20px;
+    width: 160px;
+}
+
+.imgMobil {
+    position: absolute;
+    top:10px;
+    left:25%;
+    width: 200px;
+}
+
+.navAdmin {
+    font-size: 2em;
+    color:white !important;
+    cursor: pointer;
+}
+
+.headerPcTab {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(16, 11, 46) /*rgb(23, 13, 78)*/;
+}
+
+.headerMobil {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(16, 11, 46) /*rgb(23, 13, 78)*/;
+}
+
+.deconnexion {
+    position: absolute;
+    top:30px;
+    right: 30px;
+    font-size: 3em;
+    color:rgb(253, 69, 37) !important;
+    cursor: pointer;
+}
+
+.deconnexion:hover {
+    color:rgb(250, 0, 0) !important;
+}
+
+.deconnexionMobil {
+    position: absolute;
+    top:240px;
+    right: 50%;
+    font-size: 3em;
+    color:rgb(253, 69, 37) !important;
+    cursor: pointer;
+}
+
+.deconnexionMobil:hover {
+    color:rgb(250, 0, 0) !important;
+}
+
+.copro {
+    position: absolute;
+    top:30px;
+    left: 25%;
+}
+.copro:hover {
+    color: #EA9E0A !important;
+}
+
+.coproMobil {
+    position: absolute;
+    top:145px;
+    left: 25%;
+}
+.coproMobil:hover {
+    color: #EA9E0A !important;
+}
+
+.user {
+    position: absolute;
+    top:30px;
+    left:60%;
+}
+
+.user:hover {
+    color: #EA9E0A !important;
+}
+
+.userMobil {
+    position: absolute;
+    top:185px;
+    left:25%;
+}
+
+.userMobil:hover {
+    color: #EA9E0A !important;
+}
+
+.divCenter {
+    text-align: center;
+}
+
+.ajoutCopro {
+    margin-top: 40px;
+    font-size: 2em;
+    text-align: center;
+}
+.ajoutCopro:hover  {
+    color:#EA9E0A;
+    cursor: pointer;
+}
+
+.divCopropriete {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    background-color: #0D587F;
+}
+
+.titreNom {
+    color:#EA9E0A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titreRubrique {
+    color:white;
+    margin-left: 10px;
+}
+
+.edit {
+    text-align: right;
+}
+
+.tabUserCo {
+    width: 100%;
+}
+
+.tabUserCo td {
+    width: 25%;
+    font-size: 20px;
+}
+
+.tabUserCo th { 
+    font-size: 25px;
+}
+.userSup {
+    padding-left:15px;
+}
+.sup:hover {
+    color:rgb(250, 0, 0) !important;
+    cursor: pointer;
+}
+.ajout {
+    font-size: 20px;
+}
+.ajout:hover {
+    color: #EA9E0A !important;
+    cursor: pointer;
+}
+
+.edit i:hover {
+    color: #EA9E0A !important;
+    cursor: pointer;
+}
+
+.inputUser {
+    width: 100%;
+}
