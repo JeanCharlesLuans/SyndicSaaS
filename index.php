@@ -10,7 +10,7 @@
 		<div class="container-fluid fondEcranMenu">
 			<div class="centrerDiv">
 				<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="logoMenu"><br/><br/>
-				<h1>Authentifier-vous :</h1>
+				<h1>Authentifiez-vous :</h1>
 				<input id="inputIdentifiant" type="text" placeholder="pseudo">
 				<input id="inputMDP" type="text" placeholder="Mots de passe"><br/><br/>
 				<input id="inputBtn" type="button" value="connecter">
