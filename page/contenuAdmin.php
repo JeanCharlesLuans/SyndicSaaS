@@ -65,7 +65,7 @@
 							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
+							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i><i id="edit1" class="fas fa-user-edit fa-2x editUser"></i></div>
 							<div class="col-12 d-none"></div>
 						</div>
 					</div>
