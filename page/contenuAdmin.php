@@ -36,7 +36,7 @@
 					<div class="col-12 ajoutCenter">
 						<p class="ajout divCenter"><i class="fas fa-plus"></i> user</p>
 					</div>
-					<div class="col-12">
+					<div class="col-12 divCenter">
 						<h3 class="titreRubrique"> Gestionnaire :</h3>
 						<div class="row">
 							<div class="col-sm-2 d-none d-sm-block"> ID</div>
@@ -51,7 +51,9 @@
 							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
 						</div>
 					</div>
-					<div class="col-12">
+					
+					<div class="col-12 divCenter">
+						<br/><br/>
 						<h3 class="titreRubrique"> Copropriétaire :</h3>
 						<div class="row">
 							<div class="col-sm-2 d-none d-sm-block"> ID</div>
@@ -64,13 +66,13 @@
 							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
+							<div class="col-12 d-none"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="divUsers" class="d-none divCenter">
-				<h1 class="titre">Utilisateur de l'application</h1>
-				<!--<table  class="tabUser" style="boder: solid 3px;"-->
+				<h1 class="titre">Utilisateur de l'application</h1><br/><br/><br/>
 				<div class="row">
 					<div class="col-6 col-sm-1"> ID</div>
 					<div class="col-6 col-sm-3"><input type="number" value="1" disabled></div>
@@ -89,7 +91,7 @@
 					<div class="col-6 col-sm-1">Mail</div>
 					<div class="col-6 col-sm-3"><input type="text" value="Dumas@gmail.com" disabled></div>
 					<div class="col-12"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
-					<div class="d-block d-sm-none"><p>-------------------------</p></div>
+					<div class="col-12"><p>----------------------------------------</p></div>
 				</div>
 			</div>
 		</div>
@@ -97,7 +99,7 @@
 			<p>Mention légal</p>
 		</footer>
 	</body>
-	<div class="">
+	<div class="modificationUser">
 	</div>
 	<script type="text/javascript" src="../jquery/jquery.js"></script>
 	<script type="text/javascript" src="../jquery/headerAdmin.js"></script>

@@ -179,9 +179,8 @@
 }
 
 .inputUser {
-    position: relative;
-    left: -15px;
-    width: 100px;
+    width: 100%;
+    text-align: center;
 }
 
 .editUser:hover {
