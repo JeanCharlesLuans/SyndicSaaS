@@ -146,18 +146,6 @@
     text-align: right;
 }
 
-.tabUserCo {
-    width: 100%;
-}
-
-.tabUserCo td {
-    width: 25%;
-    font-size: 20px;
-}
-
-.tabUserCo th { 
-    font-size: 25px;
-}
 .userSup {
     padding-left:15px;
 }
