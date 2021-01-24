@@ -25,10 +25,28 @@
 					</div>
 					<br/><br/>
 					<div class="col-12 divCenter">
-						<p class="ajout"><i class="fas fa-users"></i> Convocation assemblé</p>
+						<p class="ajout convo"><i class="fas fa-users "></i> Convocation assemblé</p>
+					</div>
+					<div class="col-6 textBudget">
+						<p>Gestion des budgets mensuel</p>
+					</div>
+					<div class="col-6">
+						<input type="text" />
+					</div>
+					<div class="col-6 textBudget">
+						<p>Gestion des budgets trimestriel</p>
+					</div>
+					<div class="col-6">
+						<input type="text" />
+					</div>
+					<div class="col-6 textBudget">
+						<p>Gestion des budgets annuel</p>
+					</div>
+					<div class="col-6">
+						<input type="text" />
 					</div>
 					<div class="col-12 divCenter">
-						<h3 class="titreRubrique"> Gestionnaire :</h3>
+						<h3 class="titreRubrique"> Gestionnaire des propriétaires :</h3>
 						<div></div>
 						<div class="row">
 							<div class="col-sm-2 d-none d-sm-block"> ID</div>

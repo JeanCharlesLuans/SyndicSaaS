@@ -100,3 +100,16 @@
     width: 100%;
     text-align: center;
 }
+
+.convo {
+    text-align: center;
+    font-size: 25px;
+}
+.convo:hover {
+    color: #EA9E0A !important;
+    cursor: pointer;
+}
+
+.textBudget {
+    text-align: end;
+}
