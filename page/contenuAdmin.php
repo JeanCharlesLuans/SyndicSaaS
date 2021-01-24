@@ -68,33 +68,34 @@
 					</div>
 				</div>
 			</div>
-			<div id="divUsers" class="d-none">
+			<div id="divUsers" class="d-none divCenter">
 				<h1 class="titre">Utilisateur de l'application</h1>
 				<!--<table  class="tabUser" style="boder: solid 3px;"-->
 				<div class="row">
-					<div class="col-sm-1 d-none d-sm-block"> ID</div>
-					<div class="col-sm-1 d-none d-sm-block"> NOM</div>
-					<div class="col-sm-1 d-none d-sm-block"> PRENOM</div>
-					<div class="col-sm-1 d-none d-sm-block">LOGIN</div>
-					<div class="col-sm-1 d-none d-sm-block">MDP</div>
-					<div class="col-sm-2 d-none d-sm-block" >ADRESSE</div>
-					<div class="col-sm-2 d-none d-sm-block" >TEL</div>
-					<div class="col-sm-2 d-none d-sm-block">Mail</div>
-					<div class="col-sm-1 d-none d-sm-block"></div>
-				</div>
-				<div id="user1" class="row">
-					<div class="col-12 col-sm-1"><input type="number" value="1" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-1"><input type="text" value="Dumas" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-1"><input type="text" value="Michel" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-1"><input type="text" value="MichelD" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-1"><input type="text" value="1234" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-2" ><input type="text" value="123 rue de brest" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-2" ><input type="number" value="0604020305" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-2"><input type="text" value="Dumas@gmail.com" disabled class="inputUser"></div>
-					<div class="col-12 col-sm-1"><i id="suppression1" class="fas fa-user-minus sup"></i><i class="fas fa-user-edit"></i></div>
+					<div class="col-6 col-sm-1"> ID</div>
+					<div class="col-6 col-sm-3"><input type="number" value="1" disabled></div>
+					<div class="col-6 col-sm-1"> NOM</div>
+					<div class="col-6 col-sm-3"><input type="text" value="Dumas" disabled></div>
+					<div class="col-6 col-sm-1"> PRENOM</div>
+					<div class="col-6 col-sm-3"><input type="text" value="Michel" disabled></div>
+					<div class="col-6 col-sm-1">LOGIN</div>
+					<div class="col-6 col-sm-3"><input type="text" value="MichelD" disabled ></div>
+					<div class="col-6 col-sm-1">MDP</div>
+					<div class="col-6 col-sm-3"><input type="text" value="1234" disabled></div>
+					<div class="col-6 col-sm-1" >ADRESSE</div>
+					<div class="col-6 col-sm-3" ><input type="text" value="123 rue de brest" disabled ></div>
+					<div class="col-6 col-sm-1" >TEL</div>
+					<div class="col-6 col-sm-3" ><input type="number" value="0604020305" disabled ></div>
+					<div class="col-6 col-sm-1">Mail</div>
+					<div class="col-6 col-sm-3"><input type="text" value="Dumas@gmail.com" disabled></div>
+					<div class="col-12"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
+					<div class="d-block d-sm-none"><p>-------------------------</p></div>
 				</div>
 			</div>
 		</div>
+		<footer class="footer">
+			<p>Mention légal</p>
+		</footer>
 	</body>
 	<div class="">
 	</div>

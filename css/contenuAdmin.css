@@ -179,10 +179,23 @@
 }
 
 .inputUser {
-    width: 100%;
+    position: relative;
+    left: -15px;
+    width: 100px;
 }
 
 .editUser:hover {
     color: #EA9E0A !important;
     cursor: pointer;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position : absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(16, 11, 46);
+    color: white;
 }
