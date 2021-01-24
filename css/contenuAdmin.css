@@ -19,7 +19,7 @@
 .imgMobil {
     position: absolute;
     top:10px;
-    left:25%;
+    left:35%;
     width: 200px;
 }
 
@@ -57,7 +57,7 @@
 .deconnexionMobil {
     position: absolute;
     top:240px;
-    right: 50%;
+    right: 45%;
     font-size: 3em;
     color:rgb(253, 69, 37) !important;
     cursor: pointer;
@@ -79,7 +79,7 @@
 .coproMobil {
     position: absolute;
     top:145px;
-    left: 25%;
+    left: 35%;
 }
 .coproMobil:hover {
     color: #EA9E0A !important;
@@ -98,7 +98,7 @@
 .userMobil {
     position: absolute;
     top:185px;
-    left:25%;
+    left:35%;
 }
 
 .userMobil:hover {
@@ -180,4 +180,9 @@
 
 .inputUser {
     width: 100%;
+}
+
+.editUser:hover {
+    color: #EA9E0A !important;
+    cursor: pointer;
 }

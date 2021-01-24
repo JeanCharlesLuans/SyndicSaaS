@@ -18,7 +18,7 @@
 				<p id="iconeUser" class="navAdmin userMobil"><i class="fas fa-users"></i> Utilisateur </p>
 				<a class="deconnexionMobil" href="../index.php"> <i class="fas fa-power-off"></i> </a>
 		</header>
-		<div class="container-sm backgroundContainer">
+		<div class="container backgroundContainer">
 			<div id="divCoproprietes">
 				<h1 class="divCenter">Les copropriétés sur l'application</h1>
 				<p class="ajoutCopro"><i class="fas fa-plus"></i> Copropriété</p>
@@ -48,7 +48,7 @@
 							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-2"><i class="fas fa-user-minus sup"></i><i class="fas fa-user-edit"></i></div>
+							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
 						</div>
 					</div>
 					<div class="col-12">
@@ -63,7 +63,7 @@
 							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
 							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-2"><i class="fas fa-user-minus sup"><i class="fas fa-user-edit"></i></i></div>
+							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
 						</div>
 					</div>
 				</div>
@@ -95,7 +95,9 @@
 				</div>
 			</div>
 		</div>
-    </body>
+	</body>
+	<div class="">
+	</div>
 	<script type="text/javascript" src="../jquery/jquery.js"></script>
 	<script type="text/javascript" src="../jquery/headerAdmin.js"></script>
 </html>
