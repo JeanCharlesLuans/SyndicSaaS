@@ -1,0 +1,111 @@
+.background {
+    background-color: #0D587F;
+}
+
+.backgroundContainer {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.imgPcTab {
+    position: absolute;
+    top:10px;
+    left:20px;
+    width: 160px;
+}
+
+.imgMobil {
+    position: absolute;
+    top:10px;
+    left:35%;
+    width: 200px;
+}
+
+.headerPcTab {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(16, 11, 46) /*rgb(23, 13, 78)*/;
+}
+
+.headerMobil {
+    width: 100%;
+    height: 230px;
+    background-color: rgb(16, 11, 46) /*rgb(23, 13, 78)*/;
+}
+
+.deconnexion {
+    position: absolute;
+    top:30px;
+    right: 30px;
+    font-size: 3em;
+    color:rgb(253, 69, 37) !important;
+    cursor: pointer;
+}
+
+.deconnexion:hover {
+    color:rgb(250, 0, 0) !important;
+}
+
+.deconnexionMobil {
+    position: absolute;
+    top:150px;
+    right: 40%;
+    font-size: 3em;
+    color:rgb(253, 69, 37) !important;
+    cursor: pointer;
+}
+
+.deconnexionMobil:hover {
+    color:rgb(250, 0, 0) !important;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position : absolute;
+    left:0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(16, 11, 46);
+    color: white;
+}
+
+.divCopropriete {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    background-color: #0D587F;
+}
+
+.titreNom {
+    color:#EA9E0A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titreRubrique {
+    color:white;
+    margin-left: 10px;
+}
+
+.inputUser {
+    width: 100%;
+    text-align: center;
+}
+
+.mail {
+    text-align: center;
+    font-size: 25px;
+}
+.mail:hover {
+    color: #EA9E0A !important;
+    cursor: pointer;
+}
