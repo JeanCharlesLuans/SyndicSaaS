@@ -29,6 +29,7 @@
 				<div id="divCopro1" class="divCopropriete row">
 					<div class="col-12">
 						<h2 class="titreNom"> Sainte herves de la Rue pierre </h2>
+						<p class="sousTitreLieu">à Rodez</p>
 					</div>
 					<div class="col-6 edit">
 						<i class="far fa-edit fa-2x"></i>
@@ -136,5 +137,5 @@
 	<div class="modificationUser">
 	</div>
 	<script type="text/javascript" src="../jquery/jquery.js"></script>
-	<script type="text/javascript" src="../jquery/headerAdmin.js"></script>
+	<script type="text/javascript" src="../jquery/jsAdmin.js"></script>
 </html>

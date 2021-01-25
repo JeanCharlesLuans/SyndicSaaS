@@ -134,7 +134,7 @@
 .titreNom {
     color:#EA9E0A;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .titreRubrique {
@@ -185,4 +185,11 @@
     text-align: center;
     background-color: rgb(16, 11, 46);
     color: white;
+}
+
+.sousTitreLieu {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #EA9E0A;
 }
