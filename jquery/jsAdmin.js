@@ -24,6 +24,7 @@ $('.sup').on("click",function() {
 
 });
 
+<<<<<<< Updated upstream
 $('.editUser').on("click",function() {
 
     id = recupererIDUser(5,$(this).attr('id'));
@@ -63,4 +64,8 @@ $('.editUser').on("click",function() {
 
 function recupererIDUser(tailleID,id){
     return (id.substring(tailleID-1,id.length));
+=======
+function récupérerID(tailleID,id){
+    return (id.substring(tailleID,id.length)).split('_');
+>>>>>>> Stashed changes
 }

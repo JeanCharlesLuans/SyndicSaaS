@@ -109,3 +109,20 @@
     color: #EA9E0A !important;
     cursor: pointer;
 }
+
+.msgBox {
+    z-index: 30;
+    position:fixed;
+    top: 150px;
+    left: 30%;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border:#EA9E0A solid 2px;
+    text-align: center;
+}
+
+.inputMsgBox {
+    height: 25px;
+    size: 120px;
+}

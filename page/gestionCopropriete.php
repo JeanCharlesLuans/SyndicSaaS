@@ -1,4 +1,4 @@
-<?php  $pdo = new PDO('mysql:host=localhost;dbname=syndicsaas', 'root', '');  ?>
+<?php  /*$pdo = new PDO('mysql:host=localhost;dbname=syndicsaas', 'root', '');  */?>
 
 <html>
     <head>

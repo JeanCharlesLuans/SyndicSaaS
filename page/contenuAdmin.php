@@ -124,9 +124,14 @@
 					<div class="col-6 col-sm-1" >TEL</div>
 					<div class="col-6 col-sm-3" ><input id='<?php echo 'telUser'.$res['ID']?>' type="number" value="<?php echo $res['TELEPHONE'] ?>" disabled ></div>
 					<div class="col-6 col-sm-1">Mail</div>
+<<<<<<< Updated upstream
 					<div class="col-6 col-sm-3"><input id='<?php echo 'mailUser'.$res['ID']?>' type="text" value="<?php echo $res['MAIL'] ?>" disabled></div>
 					<div class="col-12"><input id="<?php echo 'btnUser'.$res['ID']?>" type="button" value="Valider" class="d-none btnModifUser"></div><br/><br/>
 					<div class="col-12"><i id="<?php echo 'sup'.$res['ID']?>" class="fas fa-user-minus fa-2x sup"></i><i id="<?php echo 'edit'.$res['ID']?>" class="fas fa-user-edit fa-2x editUser"></i></div>
+=======
+					<div class="col-6 col-sm-3"><input type="text" value="Dumas@gmail.com" disabled></div>
+					<div class="col-12"><i id="user1_1" class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
+>>>>>>> Stashed changes
 					<div class="col-12"><p>----------------------------------------</p></div>
 				</div>
 
