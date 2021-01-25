@@ -9,11 +9,17 @@
 	<body class="background">
 		<div class="container fondEcranMenu">
 			<div class="col-12 centrerDiv">
-				<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="logoMenu"><br/><br/>
-				<h1>Authentifiez-vous :</h1>
-				<input id="inputIdentifiant" type="text" placeholder="pseudo">
-				<input id="inputMDP" type="text" placeholder="Mots de passe"><br/><br/>
-				<input id="inputBtn" type="button" value="connecter">
+				<form action="php/authentification.php" method="post">
+					<img src="img/Logo_SyndicSaaS.png" alt="logo du groupe" class="logoMenu"><br/><br/>
+					<h1>Authentifiez-vous :</h1>
+					<?php
+						if (isset($_GET['error']) && $_GET['error'] == "true")
+							echo '<p class="red">Identifiant ou mot de passe inccorect</p>'
+					?>
+					<input name="inputIdentifiant" type="text" placeholder="Login">
+					<input name="inputMDP" type="text" placeholder="Mot de passe"><br/><br/>
+					<input name="connecter" type="submit"  value="Connecter"/>
+				</form>
 			</div>
 		</div>
 	</body>

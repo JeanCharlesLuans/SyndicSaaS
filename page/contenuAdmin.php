@@ -1,3 +1,7 @@
+<?php
+	$pdo = new PDO('mysql:host=localhost;dbname=syndicsaas', 'root', '');
+?>
+
 <html>
     <head>
 		<title> SyndicSaaS Administration </title>
@@ -44,12 +48,25 @@
 							<div class="col-sm-4 d-none d-sm-block"> PRENOM</div>
 							<div class="col-sm-2"></div>
 						</div>
-						<div class="row">
-							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i></div>
-						</div>
+
+						<!-- Recherche des gestionnaire de copropriété-->
+						<?php
+							$reqPrep = $pdo->prepare("SELECT * FROM gestionnaire JOIN utilisateur ON utilisateur.id = gestionnaire.id_utilisateur");
+							$reqPrep->execute();
+							while ($res = $reqPrep->fetch()) { ?>
+								
+								<div class="row">
+									<div class="col-12 col-sm-2"><input type="number" value="<?php echo $res['ID_UTILISATEUR']; ?>" disabled class="inputUser"></div>
+									<div class="col-12 col-sm-4"><input type="text" value="<?php echo $res['NOM']; ?>" disabled class="inputUser"></div>
+									<div class="col-12 col-sm-4"><input type="text" value="<?php echo $res['PRENOM']; ?>" disabled class="inputUser"></div>
+									<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i></div>
+								</div>
+
+						<?php
+							}
+						?>
+		
+
 					</div>
 					
 					<div class="col-12 divCenter">
@@ -61,42 +78,59 @@
 							<div class="col-sm-4 d-none d-sm-block"> PRENOM</div>
 							<div class="col-sm-2"></div>
 						</div>
-						<div class="row">
-							<div class="col-12 col-sm-2"><input type="number" value="1" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-4"><input type="text" value="Dumas" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-4"><input type="text" value="Michel" disabled class="inputUser"></div>
-							<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i></div>
-							<div class="col-12 d-none"></div>
-						</div>
+
+						<!-- Recherche des gestionnaire de copropriété-->
+						<?php
+							$reqPrep = $pdo->prepare("SELECT * FROM coproprietaire JOIN utilisateur ON utilisateur.id = coproprietaire.id_utilisateur");
+							$reqPrep->execute();
+							while ($res = $reqPrep->fetch()) { ?>
+								
+								<div class="row">
+									<div class="col-12 col-sm-2"><input type="number" value="<?php echo $res['ID_UTILISATEUR']; ?>" disabled class="inputUser"></div>
+									<div class="col-12 col-sm-4"><input type="text" value="<?php echo $res['NOM']; ?>" disabled class="inputUser"></div>
+									<div class="col-12 col-sm-4"><input type="text" value="<?php echo $res['PRENOM']; ?>" disabled class="inputUser"></div>
+									<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i></div>
+								</div>
+
+							<?php }	?>
 					</div>
 				</div>
 			</div>
 			<div id="divUsers" class="d-none divCenter">
 				<h1 class="titre">Utilisateur de l'application</h1><br/><br/><br/>
+
+				<!-- Recherche des gestionnaire de copropriété-->
+				<?php
+					$reqPrep = $pdo->prepare("SELECT * FROM  utilisateur");
+					$reqPrep->execute();
+					while ($res = $reqPrep->fetch()) { ?>
+				
 				<div class="row">
 					<div class="col-6 col-sm-1"> ID</div>
-					<div class="col-6 col-sm-3"><input type="number" value="1" disabled></div>
+					<div class="col-6 col-sm-3"><input type="number" value="<?php echo $res['ID'] ?>" disabled></div>
 					<div class="col-6 col-sm-1"> NOM</div>
-					<div class="col-6 col-sm-3"><input type="text" value="Dumas" disabled></div>
+					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['NOM'] ?>" disabled></div>
 					<div class="col-6 col-sm-1"> PRENOM</div>
-					<div class="col-6 col-sm-3"><input type="text" value="Michel" disabled></div>
-					<div class="col-6 col-sm-1">LOGIN</div>
-					<div class="col-6 col-sm-3"><input type="text" value="MichelD" disabled ></div>
+					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['PRENOM'] ?>" disabled></div>
 					<div class="col-6 col-sm-1">MDP</div>
-					<div class="col-6 col-sm-3"><input type="text" value="1234" disabled></div>
-					<div class="col-6 col-sm-1" >ADRESSE</div>
-					<div class="col-6 col-sm-3" ><input type="text" value="123 rue de brest" disabled ></div>
+					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['MOT_DE_PASSE'] ?>" disabled ></div>
+					<div class="col-6 col-sm-1">ADRESSE</div>
+					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['ADRESSE'] ?>" disabled></div>
+					<div class="col-6 col-sm-1" >COMPLEMENT</div>
+					<div class="col-6 col-sm-3" ><input type="text" value="<?php echo $res['COMPLEMENT_ADRESSE'] ?>" disabled ></div>
 					<div class="col-6 col-sm-1" >TEL</div>
-					<div class="col-6 col-sm-3" ><input type="number" value="0604020305" disabled ></div>
+					<div class="col-6 col-sm-3" ><input type="number" value="<?php echo $res['TELEPHONE'] ?>" disabled ></div>
 					<div class="col-6 col-sm-1">Mail</div>
-					<div class="col-6 col-sm-3"><input type="text" value="Dumas@gmail.com" disabled></div>
+					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['MAIL'] ?>" disabled></div>
 					<div class="col-12"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
 					<div class="col-12"><p>----------------------------------------</p></div>
 				</div>
+
+					<?php } ?>
 			</div>
 		</div>
 		<footer class="footer">
-			<p>Mention légal</p>
+			<p>Mentions légales</p>
 		</footer>
 	</body>
 	<div class="modificationUser">
