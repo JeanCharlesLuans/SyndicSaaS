@@ -56,7 +56,7 @@
 							$reqPrep->execute();
 							while ($res = $reqPrep->fetch()) { ?>
 								
-								<div class="row">
+								<div id="<?php echo 'userG'.$res['ID_UTILISATEUR'];?>" class="row">
 									<div class="col-12 col-sm-2"><input type="number" value="<?php echo $res['ID_UTILISATEUR']; ?>" disabled class="inputUser"></div>
 									<div class="col-12 col-sm-4"><input type="text" value="<?php echo $res['NOM']; ?>" disabled class="inputUser"></div>
 									<div class="col-12 col-sm-4"><input type="text" value="<?php echo $res['PRENOM']; ?>" disabled class="inputUser"></div>
@@ -106,24 +106,27 @@
 					$reqPrep->execute();
 					while ($res = $reqPrep->fetch()) { ?>
 				
-				<div class="row">
+				<div id='<?php echo 'user'.$res['ID']?>' class="row ">
 					<div class="col-6 col-sm-1"> ID</div>
-					<div class="col-6 col-sm-3"><input type="number" value="<?php echo $res['ID'] ?>" disabled></div>
+					<div class="col-6 col-sm-3"><input id='<?php echo 'idUser'.$res['ID']?>' type="number" value="<?php echo $res['ID'] ?>" disabled></div>
 					<div class="col-6 col-sm-1"> NOM</div>
-					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['NOM'] ?>" disabled></div>
+					<div class="col-6 col-sm-3"><input id='<?php echo 'nomUser'.$res['ID']?>' type="text" value="<?php echo $res['NOM'] ?>" disabled></div>
 					<div class="col-6 col-sm-1"> PRENOM</div>
-					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['PRENOM'] ?>" disabled></div>
+					<div class="col-6 col-sm-3"><input id='<?php echo 'prenomUser'.$res['ID']?>' type="text" value="<?php echo $res['PRENOM'] ?>" disabled></div>
 					<div class="col-6 col-sm-1">MDP</div>
-					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['MOT_DE_PASSE'] ?>" disabled ></div>
+					<div class="col-6 col-sm-3"><input id='<?php echo 'mdpUser'.$res['ID']?>' type="text" value="<?php echo $res['MOT_DE_PASSE'] ?>" disabled ></div>
 					<div class="col-6 col-sm-1">ADRESSE</div>
-					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['ADRESSE'] ?>" disabled></div>
-					<div class="col-6 col-sm-1" >COMPLEMENT</div>
-					<div class="col-6 col-sm-3" ><input type="text" value="<?php echo $res['COMPLEMENT_ADRESSE'] ?>" disabled ></div>
+					<div class="col-6 col-sm-3"><input id='<?php echo 'adresseUser'.$res['ID']?>' type="text" value="<?php echo $res['ADRESSE'] ?>" disabled></div>
+					<div class="col-6 col-sm-1" >VILLE</div>
+					<div class="col-6 col-sm-3" ><input id='<?php echo 'villeUser'.$res['ID']?>' type="text" value="<?php echo $res['VILLE'] ?>" disabled ></div>
+					<div class="col-6 col-sm-1" >CODE POSTAL</div>
+					<div class="col-6 col-sm-3" ><input id='<?php echo 'CPUser'.$res['ID']?>' type="text" value="<?php echo $res['CODE_POSTAL'] ?>" disabled ></div>
 					<div class="col-6 col-sm-1" >TEL</div>
-					<div class="col-6 col-sm-3" ><input type="number" value="<?php echo $res['TELEPHONE'] ?>" disabled ></div>
+					<div class="col-6 col-sm-3" ><input id='<?php echo 'telUser'.$res['ID']?>' type="number" value="<?php echo $res['TELEPHONE'] ?>" disabled ></div>
 					<div class="col-6 col-sm-1">Mail</div>
-					<div class="col-6 col-sm-3"><input type="text" value="<?php echo $res['MAIL'] ?>" disabled></div>
-					<div class="col-12"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
+					<div class="col-6 col-sm-3"><input id='<?php echo 'mailUser'.$res['ID']?>' type="text" value="<?php echo $res['MAIL'] ?>" disabled></div>
+					<div class="col-12"><input id="<?php echo 'btnUser'.$res['ID']?>" type="button" value="Valider" class="d-none btnModifUser"></div><br/><br/>
+					<div class="col-12"><i id="<?php echo 'sup'.$res['ID']?>" class="fas fa-user-minus fa-2x sup"></i><i id="<?php echo 'edit'.$res['ID']?>" class="fas fa-user-edit fa-2x editUser"></i></div>
 					<div class="col-12"><p>----------------------------------------</p></div>
 				</div>
 
@@ -134,8 +137,6 @@
 			<p>Mentions légales</p>
 		</footer>
 	</body>
-	<div class="modificationUser">
-	</div>
 	<script type="text/javascript" src="../jquery/jquery.js"></script>
 	<script type="text/javascript" src="../jquery/jsAdmin.js"></script>
 </html>
