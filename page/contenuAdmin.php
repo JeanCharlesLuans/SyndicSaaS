@@ -25,6 +25,7 @@
 				<div id="divCopro1" class="divCopropriete row">
 					<div class="col-12">
 						<h2 class="titreNom"> Sainte herves de la Rue pierre </h2>
+						<p class="sousTitreLieu">à Rodez</p>
 					</div>
 					<div class="col-6 edit">
 						<i class="far fa-edit fa-2x"></i>
@@ -90,7 +91,7 @@
 					<div class="col-6 col-sm-3" ><input type="number" value="0604020305" disabled ></div>
 					<div class="col-6 col-sm-1">Mail</div>
 					<div class="col-6 col-sm-3"><input type="text" value="Dumas@gmail.com" disabled></div>
-					<div class="col-12"><i class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
+					<div class="col-12"><i id="user11" class="fas fa-user-minus fa-2x sup"></i><i class="fas fa-user-edit fa-2x editUser"></i></div>
 					<div class="col-12"><p>----------------------------------------</p></div>
 				</div>
 			</div>
@@ -102,5 +103,5 @@
 	<div class="modificationUser">
 	</div>
 	<script type="text/javascript" src="../jquery/jquery.js"></script>
-	<script type="text/javascript" src="../jquery/headerAdmin.js"></script>
+	<script type="text/javascript" src="../jquery/jsAdmin.js"></script>
 </html>
