@@ -53,7 +53,7 @@ $('.editUser').on("click",function() {
     $.ajax({
         url: "../php/ajax/modifUser.php",
         method: "GET",
-        data: 'id='+id+'&nom='+nom+'&prenom='+prenom+'&mdp='+mdp+"&adresse="+adresse+'&ville='+ville+'&codePostal='+codePostal+'&tel='+tel+'&mail='+mail,
+        data: 'id='+id+'&nom='+nom+'&prenom='+prenom+'&mdp='+mdp+'&adresse='+adresse+'&ville='+ville+'&codePostal='+codePostal+'&tel='+tel+'&mail='+mail,
         dataType: "html",
         success : function(code_html, statut){ 
             console.log('fonctionne');
@@ -74,17 +74,22 @@ $('#btnAjout').on('click',function(){
     newId = id + 1;
     console.log(newId);
     nom = $('#inputNom').val();
-    adress = $('#inputAdresse').val();
+    adresse = $('#inputAdresse').val();
     ville = $('#inputVille').val();
     codePostal = $('#inputCodePostal').val();
 
     $.ajax({
         url: "../php/ajax/addCopro.php",
         method: "GET",
-        data: 'id='+id+'&nom='+nom+"&adresse="+adresse+'&ville='+ville+'&codePostal='+codePostal,
+        data: 'id='+id+'&nom='+nom+'&adresse='+adresse+'&ville='+ville+'&codePostal='+codePostal,
         dataType: "html",
         success : function(code_html, statut){ 
-            console.log('fonctionne');
+            $('#inputNom').val('') ;
+            $('#inputAdresse').val('');
+            $('#inputVille').val('');
+            $('#inputCodePostal').val('');
+            $('#divAjoutCopro').addClass('d-none');
+
         }
     });
 });
