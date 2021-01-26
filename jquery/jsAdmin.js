@@ -98,6 +98,13 @@ $('#exitAjoutUser').on('click',function(){
     $('#divAjoutUser').addClass('d-none');
 });
 
+$('#ajoutUser').on('click',function(){
+   parentDiv = $(this).parent().parent().attr('id');
+   idCopro = recupererIDUser(9,parentDiv);
+   
+   $('#divAjoutUser').removeClass('d-none');
+});
+
 function recupererIDUser(tailleID,id){
     return (id.substring(tailleID-1,id.length));
 }
