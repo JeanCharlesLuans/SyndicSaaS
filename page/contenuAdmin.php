@@ -41,10 +41,18 @@
 				<div class="col-7"><input id="inputCodePostal" type="number"/></div>	
 				<div class="col-12 divBtnVal"><input id="btnAjout" type="button" value="Valider"/></div>
 			</div>
-			<div id="divAjoutUser" class="msgbox row">
+			<div id="divAjoutUser" class="msgbox row d-none">
 				<h1 class="col-11">Ajouter une personne</h1>
 				<div class="col-1"><i id="exitAjoutUser" class="fas fa-times fa-3x croixAjout"></i></div>
-				<div class="col-12 divBtnValUser"><input id="btnAjout" type="button" value="Valider"/></div>
+					<select id="selectUser">
+						<!-- todo a générer -->
+					</select>
+					<br/><br/>
+					<select id="selectUser">
+						<option value="C"> copoprietaire </option>
+						<option value="G"> gestionnaire </option>
+					</select>
+				<div class="col-12 divBtnVal"><input id="btnAjoutUser" type="button" value="Valider"/></div>
 			</div>
 			<div id="divCoproprietes">
 				<h1 class="divCenter">Les copropriétés sur l'application</h1>
@@ -62,7 +70,7 @@
 					</div>
 					<br/><br/>
 					<div class="col-12 ajoutCenter">
-						<p class="ajout divCenter"><i class="fas fa-plus"></i> user</p>
+						<p id="ajoutUser" class="ajout divCenter"><i class="fas fa-plus"></i> user</p>
 					</div>
 					<div class="col-12 divCenter">
 						<h3 class="titreRubrique"> Gestionnaire :</h3>
