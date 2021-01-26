@@ -73,23 +73,18 @@ $('#btnAjout').on('click',function(){
     id = parseInt(recupererIDUser(9,$(".divCopropriete").last().attr('id')));
     newId = id + 1;
     console.log(newId);
-    nom = $('#inputNom').val();
+    nom = $('#imputNom').val();
     adresse = $('#inputAdresse').val();
     ville = $('#inputVille').val();
     codePostal = $('#inputCodePostal').val();
 
     $.ajax({
-        url: "../php/ajax/addCopro.php",
+        url: "/SyndicSaaS/php/ajax/addCopro.php",
         method: "GET",
-        data: 'id='+id+'&nom='+nom+'&adresse='+adresse+'&ville='+ville+'&codePostal='+codePostal,
+        data: 'id='+newId+'&nom='+nom+'&adresse='+adresse+'&ville='+ville+'&codePostal='+codePostal,
         dataType: "html",
         success : function(code_html, statut){ 
-            $('#inputNom').val('') ;
-            $('#inputAdresse').val('');
-            $('#inputVille').val('');
-            $('#inputCodePostal').val('');
-            $('#divAjoutCopro').addClass('d-none');
-
+            location.reload();
         }
     });
 });
@@ -103,6 +98,10 @@ $('#ajoutUser').on('click',function(){
    idCopro = recupererIDUser(9,parentDiv);
    
    $('#divAjoutUser').removeClass('d-none');
+});
+
+$('#ajoutUser').on('click',function(){
+
 });
 
 function recupererIDUser(tailleID,id){

@@ -69,7 +69,7 @@
 				$reqPrepCopro->execute();
 				while ($resCopro = $reqPrepCopro->fetch()) { ?>
 				
-				<div id="divCopro1" class="divCopropriete row">
+				<div id="<?php echo 'divCopro'.$resCopro['ID']?>" class="divCopropriete row">
 					<div class="col-12">
 						<h2 class="titreNom"> <?php echo $resCopro['NOM'] ?> </h2>
 						<p class="sousTitreLieu">à <?php echo $resCopro['VILLE'] ?></p>
@@ -148,12 +148,7 @@
 				</div>
 
 				<?php } ?>
-				<!-- Fin des génération de copro-->
-
-				<div id="divCopro2" class="divCopropriete row"></div>
-			</div>
-
-			
+				<!-- Fin des génération de copro-->	
 
 			<div id="divUsers" class="d-none divCenter">
 				<h1 class="titre">Utilisateur de l'application</h1><br/><br/><br/>
