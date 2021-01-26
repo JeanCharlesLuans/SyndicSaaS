@@ -23,6 +23,10 @@
 				<a class="deconnexionMobil" href="../index.php"> <i class="fas fa-power-off"></i> </a>
 		</header>
 		<div class="container backgroundContainer">
+			<div id="ajoutCopro" class="msgbox row">
+				<h1 class="col-11">Ajouter une copropriété</h1>
+				<div class="col-1"><i id="exitAjout" class="fas fa-times fa-3x croixAjout"></i></div>		
+			</div>
 			<div id="divCoproprietes">
 				<h1 class="divCenter">Les copropriétés sur l'application</h1>
 				<p class="ajoutCopro"><i class="fas fa-plus"></i> Copropriété</p>

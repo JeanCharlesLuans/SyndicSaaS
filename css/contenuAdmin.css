@@ -193,3 +193,20 @@
     margin-bottom: 20px;
     color: #EA9E0A;
 }
+
+.msgbox {
+    position: fixed;
+    z-index:1;
+    top:110px;
+    right: 25%;
+    left:25%;
+    width: 50%;
+    height: 550px;
+    background-color: white;
+    border:#EA9E0A solid 4px;
+    border-radius: 5%;
+}
+
+.croixAjout {
+    
+}
