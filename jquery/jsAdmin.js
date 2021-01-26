@@ -70,7 +70,23 @@ $('.ajoutCopro').on('click',function(){
 });
 
 $('#btnAjout').on('click',function(){
-    console.log('')
+    id = parseInt(recupererIDUser(9,$(".divCopropriete").last().attr('id')));
+    newId = id + 1;
+    console.log(newId);
+    nom = $('#inputNom').val();
+    adress = $('#inputAdresse').val();
+    ville = $('#inputVille').val();
+    codePostal = $('#inputCodePostal').val();
+
+    $.ajax({
+        url: "../php/ajax/addCopro.php",
+        method: "GET",
+        data: 'id='+id+'&nom='+nom+"&adresse="+adresse+'&ville='+ville+'&codePostal='+codePostal,
+        dataType: "html",
+        success : function(code_html, statut){ 
+            console.log('fonctionne');
+        }
+    });
 });
 
 function recupererIDUser(tailleID,id){

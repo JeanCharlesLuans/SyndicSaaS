@@ -109,6 +109,8 @@
 							<?php }	?>
 					</div>
 				</div>
+				<div id="divCopro2" class="divCopropriete row">
+							</div>
 			</div>
 			<div id="divUsers" class="d-none divCenter">
 				<h1 class="titre">Utilisateur de l'application</h1><br/><br/><br/>
