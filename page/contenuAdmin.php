@@ -46,14 +46,15 @@
 			<div id="divAjoutUser" class="msgbox row d-none">
 				<h1 class="col-11">Ajouter une personne</h1>
 				<div class="col-1"><i id="exitAjoutUser" class="fas fa-times fa-3x croixAjout"></i></div>
+				<div class="col-12 divCenter">
 					<select id="selectUser">
-						<!-- todo a générer -->
-					</select>
-					<br/><br/>
+						<option value=""> Choisissez une personne </option>
+					</select> qui est 
 					<select id="selectUser">
 						<option value="C"> copoprietaire </option>
 						<option value="G"> gestionnaire </option>
 					</select>
+				</div>
 				<div class="col-12 divBtnVal"><input id="btnAjoutUser" type="button" value="Valider"/></div>
 			</div>
 

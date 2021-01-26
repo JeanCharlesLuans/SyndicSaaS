@@ -208,6 +208,7 @@
 
 .msgbox h1 {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .msgbox .droite {
@@ -215,6 +216,7 @@
 }
 
 .msgbox .divBtnVal {
+    padding-top: 40px;
     text-align: center;
 }
 
