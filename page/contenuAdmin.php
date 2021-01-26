@@ -27,6 +27,7 @@
 				<p id="iconeUser" class="navAdmin userMobil"><i class="fas fa-users"></i> Utilisateur </p>
 				<a class="deconnexionMobil" href="../index.php"> <i class="fas fa-power-off"></i> </a>
 		</header>
+
 		<div class="container backgroundContainer">
 			<div id="divAjoutCopro" class="msgbox row d-none">
 				<h1 class="col-11">Ajouter une copropriété</h1>
@@ -41,6 +42,7 @@
 				<div class="col-7"><input id="inputCodePostal" type="number"/></div>	
 				<div class="col-12 divBtnVal"><input id="btnAjout" type="button" value="Valider"/></div>
 			</div>
+
 			<div id="divAjoutUser" class="msgbox row d-none">
 				<h1 class="col-11">Ajouter une personne</h1>
 				<div class="col-1"><i id="exitAjoutUser" class="fas fa-times fa-3x croixAjout"></i></div>
@@ -54,13 +56,22 @@
 					</select>
 				<div class="col-12 divBtnVal"><input id="btnAjoutUser" type="button" value="Valider"/></div>
 			</div>
+
 			<div id="divCoproprietes">
 				<h1 class="divCenter">Les copropriétés sur l'application</h1>
 				<p class="ajoutCopro"><i class="fas fa-plus"></i> Copropriété</p>
+
+
+				<!-- Recherche des copropriete -->
+				<?php
+				$reqPrepCopro = $pdo->prepare("SELECT * FROM copropriete");
+				$reqPrepCopro->execute();
+				while ($resCopro = $reqPrepCopro->fetch()) { ?>
+				
 				<div id="divCopro1" class="divCopropriete row">
 					<div class="col-12">
-						<h2 class="titreNom"> Sainte herves de la Rue pierre </h2>
-						<p class="sousTitreLieu">à Rodez</p>
+						<h2 class="titreNom"> <?php echo $resCopro['NOM'] ?> </h2>
+						<p class="sousTitreLieu">à <?php echo $resCopro['VILLE'] ?></p>
 					</div>
 					<div class="col-6 edit">
 						<i class="far fa-edit fa-2x"></i>
@@ -83,8 +94,13 @@
 
 						<!-- Recherche des gestionnaire de copropriété-->
 						<?php
-							$reqPrep = $pdo->prepare("SELECT * FROM gestionnaire JOIN utilisateur ON utilisateur.id = gestionnaire.id_utilisateur");
-							$reqPrep->execute();
+							$reqPrep = $pdo->prepare("SELECT *
+													  FROM gestionnaire GEST, utilisateur USER, liste_gestionnaire_copropriete LGC
+							                          WHERE GEST.id_utilisateur = USER.id 
+													  		AND LGC.id_gestionnaire = GEST.id 
+															AND LGC.ID_COPROPRIETE = :idCopro");
+
+							$reqPrep->execute(array('idCopro' => $resCopro['ID']));
 							while ($res = $reqPrep->fetch()) { ?>
 								
 								<div id="<?php echo 'userG'.$res['ID_UTILISATEUR'];?>" class="row">
@@ -94,9 +110,7 @@
 									<div class="col-12 col-sm-2"><i class="fas fa-user-minus fa-2x sup"></i></div>
 								</div>
 
-						<?php
-							}
-						?>
+						<?php } ?>
 		
 
 					</div>
@@ -113,8 +127,12 @@
 
 						<!-- Recherche des gestionnaire de copropriété-->
 						<?php
-							$reqPrep = $pdo->prepare("SELECT * FROM coproprietaire JOIN utilisateur ON utilisateur.id = coproprietaire.id_utilisateur");
-							$reqPrep->execute();
+							$reqPrep = $pdo->prepare("SELECT *
+													  FROM coproprietaire PROP, utilisateur USER, liste_coproprietaire_copropriete LCC
+													  WHERE PROP.id_utilisateur = USER.id 
+														AND LCC.id_coproprietaire = PROP.id 
+														AND LCC.ID_COPROPRIETE = :idCopro");
+							$reqPrep->execute(array('idCopro' => $resCopro['ID']));
 							while ($res = $reqPrep->fetch()) { ?>
 								
 								<div class="row">
@@ -127,9 +145,15 @@
 							<?php }	?>
 					</div>
 				</div>
-				<div id="divCopro2" class="divCopropriete row">
-							</div>
+
+				<?php } ?>
+				<!-- Fin des génération de copro-->
+
+				<div id="divCopro2" class="divCopropriete row"></div>
 			</div>
+
+			
+
 			<div id="divUsers" class="d-none divCenter">
 				<h1 class="titre">Utilisateur de l'application</h1><br/><br/><br/>
 
