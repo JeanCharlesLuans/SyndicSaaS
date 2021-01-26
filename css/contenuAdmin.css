@@ -153,6 +153,10 @@
     color:rgb(250, 0, 0) !important;
     cursor: pointer;
 }
+.supCopro:hover {
+    color:rgb(250, 0, 0) !important;
+    cursor: pointer;
+}
 .ajout {
     font-size: 20px;
 }

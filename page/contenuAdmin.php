@@ -70,15 +70,12 @@
 				while ($resCopro = $reqPrepCopro->fetch()) { ?>
 				
 				<div id="<?php echo 'divCopro'.$resCopro['ID']?>" class="divCopropriete row">
-					<div class="col-12">
+					<div class="col-11">
 						<h2 class="titreNom"> <?php echo $resCopro['NOM'] ?> </h2>
 						<p class="sousTitreLieu">à <?php echo $resCopro['VILLE'] ?></p>
 					</div>
-					<div class="col-6 edit">
-						<i class="far fa-edit fa-2x"></i>
-					</div>
-					<div class="col-6 ">
-						<i class="fas fa-trash fa-2x sup"></i>
+					<div class="col-1">
+						<i class="fas fa-trash fa-2x supCopro"></i>
 					</div>
 					<br/><br/>
 					<div class="col-12 ajoutCenter">

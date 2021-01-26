@@ -100,8 +100,18 @@ $('#ajoutUser').on('click',function(){
    $('#divAjoutUser').removeClass('d-none');
 });
 
-$('#ajoutUser').on('click',function(){
-
+$('.supCopro').on('click',function(){
+    parentDiv = $(this).parent().parent().attr('id');
+    id = recupererIDUser(9,parentDiv);
+    $.ajax({
+        url: "/SyndicSaaS/php/ajax/deleteCopro.php",
+        method: "GET",
+        data: 'id='+id,
+        dataType: "html",
+        success : function(code_html, statut){ 
+            location.reload();
+        }
+    });
 });
 
 function recupererIDUser(tailleID,id){
