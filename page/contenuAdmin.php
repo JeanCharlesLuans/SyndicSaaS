@@ -41,6 +41,11 @@
 				<div class="col-7"><input id="inputCodePostal" type="number"/></div>	
 				<div class="col-12 divBtnVal"><input id="btnAjout" type="button" value="Valider"/></div>
 			</div>
+			<div id="divAjoutUser" class="msgbox row">
+				<h1 class="col-11">Ajouter une personne</h1>
+				<div class="col-1"><i id="exitAjoutUser" class="fas fa-times fa-3x croixAjout"></i></div>
+				<div class="col-12 divBtnValUser"><input id="btnAjout" type="button" value="Valider"/></div>
+			</div>
 			<div id="divCoproprietes">
 				<h1 class="divCenter">Les copropriétés sur l'application</h1>
 				<p class="ajoutCopro"><i class="fas fa-plus"></i> Copropriété</p>

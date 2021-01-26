@@ -94,6 +94,10 @@ $('#btnAjout').on('click',function(){
     });
 });
 
+$('#exitAjoutUser').on('click',function(){
+    $('#divAjoutUser').addClass('d-none');
+});
+
 function recupererIDUser(tailleID,id){
     return (id.substring(tailleID-1,id.length));
 }
