@@ -61,6 +61,18 @@ $('.editUser').on("click",function() {
     });
  });
 
+$('#exitAjout').on('click',function(){
+    $('#divAjoutCopro').addClass('d-none');
+});
+
+$('.ajoutCopro').on('click',function(){
+    $('#divAjoutCopro').removeClass('d-none');
+});
+
+$('#btnAjout').on('click',function(){
+    console.log('')
+});
+
 function recupererIDUser(tailleID,id){
     return (id.substring(tailleID-1,id.length));
 }

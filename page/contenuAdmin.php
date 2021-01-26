@@ -23,9 +23,18 @@
 				<a class="deconnexionMobil" href="../index.php"> <i class="fas fa-power-off"></i> </a>
 		</header>
 		<div class="container backgroundContainer">
-			<div id="ajoutCopro" class="msgbox row">
+			<div id="divAjoutCopro" class="msgbox row d-none">
 				<h1 class="col-11">Ajouter une copropriété</h1>
-				<div class="col-1"><i id="exitAjout" class="fas fa-times fa-3x croixAjout"></i></div>		
+				<div class="col-1"><i id="exitAjout" class="fas fa-times fa-3x croixAjout"></i></div>
+				<div class="col-5 droite">Nom :</div>
+				<div class="col-7"><input id="imputNom" type="text" /></div>
+				<div class="col-5 droite">Adresse :</div>
+				<div class="col-7"><input id="inputAdresse" type="text"/></div>
+				<div class="col-5 droite">Ville :</div>
+				<div class="col-7"><input id="inputVille" type="text"/></div>	
+				<div class="col-5 droite">Code postal :</div>
+				<div class="col-7"><input id="inputCodePostal" type="number"/></div>	
+				<div class="col-12 divBtnVal"><input id="btnAjout" type="button" value="Valider"/></div>
 			</div>
 			<div id="divCoproprietes">
 				<h1 class="divCenter">Les copropriétés sur l'application</h1>

@@ -207,6 +207,24 @@
     border-radius: 5%;
 }
 
-.croixAjout {
-    
+.msgbox h1 {
+    text-align: center;
 }
+
+.msgbox .droite {
+    text-align: right;
+}
+
+.msgbox .divBtnVal {
+    text-align: center;
+}
+
+.croixAjout {
+    color : rgb(253, 69, 37)!important;
+}
+
+.croixAjout:hover {
+    color : rgb(250, 0, 0) !important;
+    cursor: pointer;
+}
+
