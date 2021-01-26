@@ -1,5 +1,10 @@
 <?php
 	$pdo = new PDO('mysql:host=localhost;dbname=syndicsaas', 'root', '');
+
+	session_start();
+	if ($_SESSION['admin'] == false) {
+		header('Location: ../page');
+	}
 ?>
 
 <html>
