@@ -22,7 +22,7 @@
 						if (isset($_GET['error']) && $_GET['error'] == "true")
 							echo '<p class="red">Identifiant ou mot de passe inccorect</p>'
 					?>
-					<input name="inputIdentifiant" type="text" placeholder="Login">
+					<input name="inputIdentifiant" type="text" placeholder="mail">
 					<input name="inputMDP" type="text" placeholder="Mot de passe"><br/><br/>
 					<input name="connecter" type="submit"  value="Connecter"/>
 				</form>
