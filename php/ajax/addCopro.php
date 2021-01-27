@@ -1,4 +1,5 @@
 <?php
+/* Dossiers ajoutCopro */
 $pdo = new PDO('mysql:host=localhost;dbname=syndicsaas', 'root', '');
 
 echo '<br/>nom : '.$_GET['nom'];
