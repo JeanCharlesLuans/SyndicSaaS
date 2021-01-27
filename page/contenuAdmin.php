@@ -46,14 +46,11 @@
 			<div id="divAjoutUser" class="msgbox row d-none">
 				<h1 class="col-11">Ajouter une personne</h1>
 				<div class="col-1"><i id="exitAjoutUser" class="fas fa-times fa-3x croixAjout"></i></div>
-				<div class="col-12 divCenter">
-					<select id="selectUser">
-						<option value=""> Choisissez une personne </option>
-					</select> qui est 
-					<select id="selectUser">
-						<option value="C"> copoprietaire </option>
-						<option value="G"> gestionnaire </option>
-					</select>
+				<div class="col-6 divCenter">
+					<p>Id de l'utilisateur :</p> 
+				</div>
+				<div class="col-6 divCenter">
+					<input id="idUserInput" />
 				</div>
 				<div class="col-12 divBtnVal"><input id="btnAjoutUser" type="button" value="Valider"/></div>
 			</div>
@@ -78,18 +75,17 @@
 						<i class="fas fa-trash fa-2x supCopro"></i>
 					</div>
 					<br/><br/>
-					<div class="col-12 ajoutCenter">
-						<p id="ajoutUser" class="ajout divCenter"><i class="fas fa-plus"></i> user</p>
-					</div>
 					<div class="col-12 divCenter">
 						<h3 class="titreRubrique"> Gestionnaire :</h3>
+						<div class="col-12 ajoutCenter">
+							<p id="ajoutGestionaire" class="ajout"><i class="fas fa-plus"></i> user</p>
+						</div>
 						<div class="row">
 							<div class="col-sm-2 d-none d-sm-block"> ID</div>
 							<div class="col-sm-4 d-none d-sm-block"> NOM</div>
 							<div class="col-sm-4 d-none d-sm-block"> PRENOM</div>
 							<div class="col-sm-2"></div>
 						</div>
-
 						<!-- Recherche des gestionnaire de copropriété-->
 						<?php
 							$reqPrep = $pdo->prepare("SELECT *

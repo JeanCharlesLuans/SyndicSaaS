@@ -93,8 +93,8 @@ $('#exitAjoutUser').on('click',function(){
     $('#divAjoutUser').addClass('d-none');
 });
 
-$('#ajoutUser').on('click',function(){
-   parentDiv = $(this).parent().parent().attr('id');
+$('#ajoutGestionaire').on('click',function(){
+   parentDiv = $(this).parent().parent().parent().attr('id');
    idCopro = recupererIDUser(9,parentDiv);
    
    $('#divAjoutUser').removeClass('d-none');
